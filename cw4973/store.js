@@ -27,6 +27,7 @@ async function store() {
     const cw4973 = fs.readFileSync(`${__dirname}/../target/wasm32-unknown-unknown/release/cw4973.wasm`);
     const cw4973Response = await client.upload(account.address, cw4973, uploadFee, 'Upload cw4973 contract code');
     console.log(cw4973Response);
+
 }
 
 store()
